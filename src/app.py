@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/api/v1/details')
 def details():
-    return jsonify({ 'hostname':socket.gethostname(),'time': datetime.datetime.now().strftime("%I:%M%p on %B %d, %Y")})
+    return jsonify({ 'hostname':socket.gethostname(),'date': datetime.datetime.now().strftime("%I:%M%p on %B %d, %Y")})
 
 @app.route('/api/v1/health')
 def health():
