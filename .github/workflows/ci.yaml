@@ -28,4 +28,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: alialaa/python-app:${{ github.sha }}
+          tags: alialaa/python-app:${{ env.COMMIT_ID }}
